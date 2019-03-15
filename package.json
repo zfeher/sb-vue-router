@@ -1,0 +1,30 @@
+{
+  "name": "sb-vue-router",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "parcel src/index.html",
+    "build": "parcel build src/index.html",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@vue/component-compiler-utils": "^2.6.0",
+    "confusing-browser-globals": "^1.0.6",
+    "eslint": "^5.15.1",
+    "eslint-config-prettier": "^4.1.0",
+    "eslint-plugin-import": "^2.16.0",
+    "eslint-plugin-unicorn": "^7.1.0",
+    "eslint-plugin-vue": "^5.2.2",
+    "parcel-bundler": "^1.12.2",
+    "prettier": "^1.16.4",
+    "vue-template-compiler": "^2.6.9"
+  },
+  "dependencies": {
+    "vue": "^2.6.9",
+    "vue-hot-reload-api": "^2.3.3",
+    "vue-router": "^3.0.2"
+  }
+}
