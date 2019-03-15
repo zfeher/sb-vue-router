@@ -4,7 +4,7 @@ module.exports = {
   root: true,
 
   parserOptions: {
-    // "parser": "babel-eslint",
+    parser: "babel-eslint",
     sourceType: "module",
     ecmaVersion: 2019,
   },
@@ -28,7 +28,18 @@ module.exports = {
     "prettier/vue",
   ],
 
+  settings: {
+    "import/resolver": {
+      node: {
+        extensions: [".js", ".vue"],
+      },
+    },
+  },
+
   rules: {
+    // !!! temp hacks !!!
+    "no-console": "off",
+
     // Possible Errors (over recommended ones)
 
     "no-async-promise-executor": "error",
@@ -250,6 +261,19 @@ module.exports = {
     "prefer-spread": "error",
     "prefer-template": "error",
     "symbol-description": "error",
+
+    // Import
+
+    "import/no-unresolved": ["error", { commonjs: true, caseSensitive: true }],
+
+    "import/extensions": [
+      "error",
+      "ignorePackages",
+      {
+        js: "never",
+        vue: "never",
+      },
+    ],
 
     // Unicorn
 
